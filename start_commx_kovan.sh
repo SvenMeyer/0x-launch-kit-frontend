@@ -1,0 +1,1 @@
+REACT_APP_RELAYER_URL='http://commx.exchange:3000/' REACT_APP_RELAYER_WS_URL='ws://commx.exchange:3000/' REACT_APP_NETWORK_ID=42 REACT_APP_CHAIN_ID=42 yarn start

@@ -109,3 +109,12 @@ Check `.env.example` for the full list.
 ### Using custom themes
 
 If you want to add your own theme for the app, please read the [THEMES.md](THEMES.md) file
+
+
+### Build docker image
+
+`docker build -t commx-frontend:1.0.2 .`
+
+### Run docker image
+
+`docker run -d -p 80:80 commx-frontend:1.0.2`

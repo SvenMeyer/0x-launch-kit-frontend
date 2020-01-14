@@ -115,23 +115,28 @@ If you want to add your own theme for the app, please read the [THEMES.md](THEME
 
 `docker build -t commx-frontend:1.0.2 .`
 
-### Run docker image
+### Run docker image locally
 
 `docker run -d -p 80:80 commx-frontend:1.0.2`
 
 ### Deploy docker image on AWS t3.micro
 
 create machine
+
 `docker-machine create --driver amazonec2 --amazonec2-region ap-southeast-1 --amazonec2-instance-type "t3.micro" --amazonec2-open-port 80 --amazonec2-open-port 443 --amazonec2-security-group gn-commx-frontend commx-frontend`
 
 tag local image for push
+
 `docker tag 0c39fd48fb0f svenmeyer1/commx-frontend:1.0.2`
 
 push image to hub.docker.io
+
 `docker push svenmeyer1/commx-frontend`
 
 switch to remote host
+
 `eval $(docker-machine env commx-frontend)`
 
 pull image on remote host and run
+
 `docker run -d -p 80:80 svenmeyer1/commx-frontend:1.0.2`

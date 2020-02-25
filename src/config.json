@@ -1,17 +1,32 @@
 {
     "general": {
-        "title": "commX"
+        "title": "Xchange"
     },
     "tokens": [
-        {
-            "symbol": "feo1",
-            "name": "Iron Ore Token Type1",
+            {
+            "symbol": "fec1",
+            "name": "FECoin (Type 1)",
             "primaryColor": "#333333",
             "icon": "assets/icons/zrx.svg",
             "addresses": {
-                "1": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
-                "3": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
-                "4": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
+                 "1": "0xEC65D963F58cB4E96b38Aa9b669048D2F1771088",
+                 "3": "0xEC65D963F58cB4E96b38Aa9b669048D2F1771088",
+                 "4": "0xEC65D963F58cB4E96b38Aa9b669048D2F1771088",
+                "42": "0xEC65D963F58cB4E96b38Aa9b669048D2F1771088",
+                "50": "0xEC65D963F58cB4E96b38Aa9b669048D2F1771088"
+            },
+            "decimals": 18,
+            "displayDecimals": 4
+        },
+        {
+            "symbol": "feo1",
+            "name": "FECoin Test1 (kovan) ",
+            "primaryColor": "#333333",
+            "icon": "assets/icons/zrx.svg",
+            "addresses": {
+                 "1": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
+                 "3": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
+                 "4": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
                 "42": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f",
                 "50": "0x1621aec5d5b2e6ec6d9b58399e9d5253af86df5f"
             },
@@ -24,9 +39,9 @@
             "primaryColor": "#333333",
             "icon": "assets/icons/zrx.svg",
             "addresses": {
-                "1": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
-                "3": "0xff67881f8d12f372d91baae9752eb3631ff0ed00",
-                "4": "0x8080c7e4b81ecf23aa6f877cfbfd9b0c228c6ffa",
+                 "1": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
+                 "3": "0xff67881f8d12f372d91baae9752eb3631ff0ed00",
+                 "4": "0x8080c7e4b81ecf23aa6f877cfbfd9b0c228c6ffa",
                 "42": "0x2002d3812f58e35f0ea1ffbf80a75a38c32175fa",
                 "50": "0x871dd7c2b4b25e1aa18728e9d5f2af4c4e431f5c"
             },
@@ -121,11 +136,11 @@
     ],
     "pairs": [
         {
-            "base": "feo1",
+            "base": "fec1",
             "quote": "weth"
         },
         {
-            "base": "feo1",
+            "base": "fec1",
             "quote": "dai"
         },
         {
@@ -159,8 +174,8 @@
     ],
     "marketFilters": [
         {
-            "text": "FEO1",
-            "value": "feo1"
+            "text": "FEC1",
+            "value": "fec1"
         }
     ]
 }
